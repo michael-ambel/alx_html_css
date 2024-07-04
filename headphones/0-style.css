@@ -1,0 +1,219 @@
+*{
+  color: #071629;
+  text-decoration: none;
+  max-width: 1440px;
+  font-family: 'Source Sans Pro', sans-serif;
+  list-style: none;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  height: 800px;
+  background-image: url('./images/headphones_hero_1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:auto;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 32px;
+  width: 1000px;
+  margin-top: 27.76px;
+}
+.nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+nav img{
+  width: 161px;
+  height: 32px;
+}
+nav a{
+  font-weight: bold;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+nav ul{
+  display: flex;
+  align-items: center;
+  width: 215px;
+  height: 15px;
+  justify-content: space-between;
+}
+
+#menu-toggle{
+  display: none;
+}
+
+#menu-button {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+  width: 20px;
+  height: 14px;
+  background: transparent;
+  display: none;
+}
+
+#menu-button span{
+  background-color: #FFFFFF;
+  height: 2px;
+}
+#menu-button :nth-child(1){
+  position: relative;
+  width: 20px;
+  top: 0px;
+}
+#menu-button :nth-child(2){
+  position: relative;
+  width: 14px;
+  top: 6px;
+}
+
+#menu-button :nth-child(3){
+  position: relative;
+  width: 20px;
+  top: 12px;
+}
+
+.home-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 637px;
+  height: 313px;
+  margin-top: 313.24px;
+}
+.home-box h2{
+  font-size: 32px;
+  font-weight: bold;
+  color: #FFFFFF;  
+}
+.home-box h3{
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;  
+}
+.home-box button{
+  border-radius: 0px;
+  width: 162px;
+  height: 44px;
+  border-radius: 22px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF; 
+  background-color:#FF6565; 
+  margin-top: 40px;
+}
+.home-box p{
+  font-size: 16px;
+  color: #FFFFFF; 
+  margin-top: 65px;
+}
+
+
+
+/* for screen size from 480px to 768px */
+
+@media (min-width: 480px) and (max-width: 768px) {
+  header{
+    height: 869px;
+  }
+  nav{
+    width: 633px;
+  }
+  .home-box{
+    width: 637px;
+    height: 313px;
+  }
+}
+
+@media (max-width:480px) {
+  header{
+    height: fit-content;
+  }
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    align-items: start;
+    justify-content: start;
+    width: 100vw;
+   
+  }
+
+  .nav-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-bar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-bar ul li{
+    margin: 10px;
+  }
+
+  #menu-toggle:not(:checked) ~ .nav-bar ul{
+    display: none;
+  }
+  #menu-toggle:checked ~ .nav-bar ul{
+    display: flex;
+    flex-direction: column;
+    width:100px;
+  }
+
+  #menu-button{
+    display: flex;
+    margin-top: 9px;
+    margin-left: 9px;
+    
+  }
+
+  .home-box{
+    width: 357px;  
+    height: 436px;
+    margin-top: 266px; 
+  }
+  .home-box h2{
+    margin-top: 0px;
+    margin-bottom: 5px; 
+  }
+  .home-box h3{
+    margin-top: 0px;
+    margin-bottom: 20px; 
+  }
+  .home-box button{
+    margin-top: 0px;
+    margin-bottom: 65px; 
+  }
+  .home-box p{
+    margin-top: 0px;
+    margin-bottom: 5px; 
+  }
+}
+
+
