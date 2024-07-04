@@ -7,6 +7,7 @@
   text-align: center;
   margin: 0px;
   padding: 0px;
+  line-height: 1.5;
 }
 
 body{
@@ -133,6 +134,73 @@ nav ul a:hover{
   margin-top: 65px;
 }
 
+/* what we do section */
+#what{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 694px;
+}
+.what-header{
+  width: 637px;
+  height: 184px;
+  margin-top: 110px;
+}
+
+.what-header h2{
+  font-weight: 600;
+  font-size: 32px;
+}
+.what-header p{
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.what-list{
+  display: flex;
+  width: 1002px;
+  height: 193px;
+  margin-top: 97px;
+}
+.what-list1{
+  display: flex;
+  justify-content: space-between;
+  width: 501;
+  height: 193px;
+}
+.what-list2{
+  display: flex;
+  justify-content: space-between;
+  width: 501;
+  height: 193px;
+}
+
+.what-card{
+  width: 207px;
+  height: 180px;
+  margin-left: 29px;
+  margin-right: 29px;
+}
+.what-card span{
+  font-size: 110px;
+  color: #FF6565;
+}
+.what-card h3{
+  font-size: 18px;
+  font-weight: 600;
+  
+}
+.what-card p{
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 13px;
+}
+/* our resul speaks... section */
+#our{
+  height: 650px;
+  background-image: url('images/headphones_hero_2.jpg');
+}
+
 
 
 /* for screen size from 480px to 768px */
@@ -147,6 +215,31 @@ nav ul a:hover{
   .home-box{
     width: 637px;
     height: 313px;
+  }
+
+  /* what we do section */
+  #what{
+    height: 969px;
+  }
+  .what-list{
+    display: flex;
+    flex-direction: column;
+    width: 472px;
+    height: 469px;
+    margin-top: 97px;
+  }
+  .what-list1{
+    display: flex;
+    justify-content: space-between;
+    width: 501;
+    height: 236px;
+  }
+  .what-list2{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 501;
+    height: 236px;
   }
 }
 
@@ -199,8 +292,8 @@ nav ul a:hover{
 
   .home-box{
     width: 357px;  
-    height: 436px;
-    margin-top: 266px; 
+    height: 466px;
+    margin-top: 226px; 
   }
   .home-box h2{
     margin-top: 0px;
@@ -212,12 +305,48 @@ nav ul a:hover{
   }
   .home-box button{
     margin-top: 0px;
-    margin-bottom: 65px; 
+    margin-bottom: 55px; 
   }
   .home-box p{
     margin-top: 0px;
     margin-bottom: 5px; 
   }
+
+    /* what we do section */
+    #what{
+      height: 1638px;
+    }
+
+    .what-header{
+      width: 325px;
+      height: 288px;
+    }
+    .what-list{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 207px;
+      height: 1020px;
+      margin-top: 97px;
+    }
+    .what-list1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 207px;
+      height: 510px;
+      padding-bottom: 48px;
+    }
+    .what-list2{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 207;
+      height: 510px;
+      padding-top: 48px;
+    }
 }
 
 
