@@ -1,0 +1,653 @@
+*{
+  color: #071629;
+  text-decoration: none;
+  max-width: 1440px;
+  font-family: 'Source Sans Pro', sans-serif;
+  list-style: none;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  line-height: 1.5;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  height: 800px;
+  background-image: url('./images/headphones_hero_1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:auto;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 32px;
+  width: 1000px;
+  margin-top: 27.76px;
+}
+.nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+nav img{
+  width: 161px;
+  height: 32px;
+}
+nav a{
+  font-weight: bold;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+nav ul{
+  display: flex;
+  align-items: center;
+  width: 215px;
+  height: 15px;
+  justify-content: space-between;
+}
+nav ul a:hover{
+  color: #FF6565;
+  opacity: 0.9;
+}
+
+#menu-toggle{
+  display: none;
+}
+
+#menu-button {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+  width: 20px;
+  height: 14px;
+  background: transparent;
+  display: none;
+}
+
+#menu-button span{
+  background-color: #FFFFFF;
+  height: 2px;
+}
+#menu-button :nth-child(1){
+  position: relative;
+  width: 20px;
+  top: 0px;
+}
+#menu-button :nth-child(2){
+  position: relative;
+  width: 14px;
+  top: 6px;
+}
+
+#menu-button :nth-child(3){
+  position: relative;
+  width: 20px;
+  top: 12px;
+}
+
+.home-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 637px;
+  height: 313px;
+  margin-top: 313.24px;
+}
+.home-box h2{
+  font-size: 32px;
+  font-weight: bold;
+  color: #FFFFFF;  
+}
+.home-box h3{
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;  
+}
+.home-box button{
+  border-radius: 0px;
+  width: 162px;
+  height: 44px;
+  border-radius: 22px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF; 
+  background-color:#FF6565; 
+  margin-top: 40px;
+}
+.home-box p{
+  font-size: 16px;
+  color: #FFFFFF; 
+  margin-top: 65px;
+}
+
+/* what we do section */
+#what{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 694px;
+}
+.what-header{
+  width: 637px;
+  height: 184px;
+  margin-top: 110px;
+}
+
+.what-header h2{
+  font-weight: 600;
+  font-size: 32px;
+}
+.what-header p{
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.what-list{
+  display: flex;
+  width: 1002px;
+  height: 193px;
+  margin-top: 97px;
+}
+.what-list1{
+  display: flex;
+  justify-content: space-between;
+  width: 501;
+  height: 193px;
+}
+.what-list2{
+  display: flex;
+  justify-content: space-between;
+  width: 501;
+  height: 193px;
+}
+
+.what-card{
+  width: 207px;
+  height: 180px;
+  margin-left: 29px;
+  margin-right: 29px;
+}
+.what-card span{
+  font-size: 110px;
+  color: #FF6565;
+}
+.what-card h3{
+  font-size: 18px;
+  font-weight: 600;
+  
+}
+.what-card p{
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 13px;
+}
+/* our resul speaks... section */
+#our{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 650px;
+  width: 100%;
+  background-image: url('images/headphones_hero_2.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.our-header {
+  width: 637px;
+
+}
+.our-header h2{
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 141px;
+}
+.our-header p{
+  color: #FFFFFF;
+  width: 637px;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.our-list{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 988px;
+  height: 190px;
+  margin-top: 80px;
+}
+.our-list1{
+  display: flex;
+  justify-content: space-between ;
+  width: 456px;
+  height: 190px;
+}
+.our-list2{
+  display: flex;
+  justify-content: space-between;
+  width: 456px;
+  height: 190px;
+}
+
+.pholder{
+  width: 190px;
+  height: 190px;
+}
+
+.pentagon{
+  transform: translate(0%, 100%);
+  height: 0;
+  width: 120px;
+  border-top: 91px solid #FF6565;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;   
+}
+
+.pentagon:after{
+  position: absolute;
+  content: '';
+  border-bottom: 80px solid #FF6565;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  bottom: 90px;
+  left: -30px;
+}
+
+.our-card{
+  position: absolute;
+  bottom: 80px;
+  color: #FFFFFF;
+  background-color: transparent;
+  bottom: -25px;
+  z-index: 1;
+}
+
+.our-card h2{
+  color: #FFFFFF;
+  font-size: 46px;
+  font-weight: bold;
+  margin-top: auto;
+}
+.our-card p{
+  color: #FFFFFF;
+  font-size: 14px;
+  margin-bottom: 48px;
+}
+
+/* contact us section */
+#contact-us{
+  display: flex;
+  height: 613px;
+  align-items: center;
+  justify-content: center;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 335px;
+  height: 373px;
+  margin-top: 110px;
+}
+
+.contact h2{
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.contact-form{
+  width: 335px;
+  height: 277px;
+  margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-form input{
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  height: 29px;
+  margin-bottom: 45px;
+  text-align: start;
+}
+.contact-form input::placeholder{
+  color: #071629;
+}
+.contact-form button{
+  width: 162px;
+  height: 44px;
+  margin-top: 11px;
+  background-color: #FF6565;
+  border-width: 0px;
+  border-radius: 22px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* footer section */
+footer{
+  display: flex;
+  flex-direction: column;
+  height: 249px;
+  padding: 0 120px;
+  background-color: #071629;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  height: 34px;
+  margin-top: 90px;
+}
+.footer-content img{
+  width: 161px;
+  height: 32px;
+}
+
+.social span{
+  font-size: 30px;
+  color: #FFFFFF;
+  margin-left:10px;
+}
+
+footer p{
+  font-size: 12px;
+  color: #FFFFFF;
+  margin-top: 71.24px;
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  nav{
+    width: 800px;
+  }
+}
+/* for screen size from 480px to 768px */
+
+@media (min-width: 480px) and (max-width: 768px) {
+  header{
+    display: flex;
+   height: 800px;
+  }
+  nav{
+    width: 633px;
+  }
+  .home-box{
+    width: 637px;
+    height: 350px;
+  }
+
+  /* what we do section */
+  #what{
+    height: 969px;
+  }
+  .what-list{
+    display: flex;
+    flex-direction: column;
+    width: 472px;
+    height: 469px;
+    margin-top: 97px;
+  }
+  .what-list1{
+    display: flex;
+    justify-content: space-between;
+    width: 501;
+    height: 236px;
+  }
+  .what-list2{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 501;
+    height: 236px;
+  }
+
+  /* our results.... section*/
+  #our{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 876px;
+    width: 100%;
+  
+  }
+  .our-header {
+    width: 637px;
+  }
+  
+  .our-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 456px;
+    height: 442px;
+    margin-top: 76px;
+  }
+  .our-list1{
+    display: flex;
+    justify-content: space-between ;
+    width: 456px;
+    height: 190px;
+  }
+  .our-list2{
+    display: flex;
+    justify-content: space-between;
+    width: 456px;
+    height: 190px;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    height: 249px;
+    padding: 0 90px;
+    background-color: #071629;
+  }
+  
+
+}
+
+@media (max-width:480px) {
+  header{
+    height: fit-content;
+  }
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    align-items: start;
+    justify-content: start;
+    width: 100vw;
+   
+  }
+
+  .nav-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-bar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-bar ul li{
+    margin: 10px;
+  }
+
+  #menu-toggle:not(:checked) ~ .nav-bar ul{
+    display: none;
+  }
+  #menu-toggle:checked ~ .nav-bar ul{
+    display: flex;
+    flex-direction: column;
+    width:100px;
+  }
+
+  #menu-button{
+    display: flex;
+    margin-top: 9px;
+    margin-left: 9px;
+    
+  }
+
+  .home-box{
+    width: 357px;  
+    height: 466px;
+    margin-top: 226px; 
+  }
+  .home-box h2{
+    margin-top: 0px;
+    margin-bottom: 5px; 
+  }
+  .home-box h3{
+    margin-top: 0px;
+    margin-bottom: 20px; 
+  }
+  .home-box button{
+    margin-top: 0px;
+    margin-bottom: 55px; 
+  }
+  .home-box p{
+    margin-top: 0px;
+    margin-bottom: 5px; 
+  }
+
+    /* what we do section */
+    #what{
+      height: 1638px;
+    }
+
+    .what-header{
+      width: 325px;
+      height: 288px;
+    }
+    .what-list{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 207px;
+      height: 1020px;
+      margin-top: 97px;
+    }
+    .what-list1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 207px;
+      height: 510px;
+      padding-bottom: 48px;
+    }
+    .what-list2{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 207;
+      height: 510px;
+      padding-top: 48px;
+    }
+
+      /* our results.... section*/
+  #our{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1491px;
+    width: 100%;
+    background-image: url('images/headphones_hero_2.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  .our-header {
+    width: 305px;
+  }
+
+  .our-header p{
+    color: #FFFFFF;
+    width: 305px;
+    font-size: 16px;
+    margin-top: 40px;
+  }
+  
+  .our-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 190px;
+    height: 886px;
+    margin-top: 76px;
+  }
+  .our-list1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 190px;
+    height: 443px;
+  }
+  .our-list2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 190px;
+    height: 443px;
+    margin-bottom: 21px;
+  }
+  
+  .our-card{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 190px;
+    height: 190px;
+    z-index: 1;
+    left: -36px;
+  }
+  
+  .footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 107px;
+    margin-top: 48px;
+    margin-bottom: 45px;
+  }
+  .footer-content img{
+    width: 161px;
+    height: 32px;
+  }
+  
+  .social{
+    margin-top: 45px;
+  }
+
+  footer p{
+    font-size: 12px;
+    color: #FFFFFF;
+    margin-top: 0px;
+  }
+
+}
+
+
